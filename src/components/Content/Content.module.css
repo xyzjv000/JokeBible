@@ -1,0 +1,19 @@
+.container {
+    width: 70%;
+    margin: auto;
+    border-top: 3px solid #ececec;
+}
+
+.selectedCategory {
+    display: inline-flex;
+    width: auto;
+    padding: 5px 20px;
+    border-radius: 40px;
+    border: 1px solid;
+}
+
+.selectedCategory {
+    font-weight: 600;
+    font-size: 14px;
+    cursor: default;
+}

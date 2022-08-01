@@ -1,0 +1,12 @@
+.btnStyle {
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.43;
+    padding: 15px 0;
+    cursor: pointer;
+    border: 3px solid;
+    position: relative;
+}

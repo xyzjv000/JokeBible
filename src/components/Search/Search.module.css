@@ -1,0 +1,28 @@
+.searchBox {
+    margin-top: 4.5rem;
+    position: relative;
+}
+
+.inputStyle {
+    width: 40rem;
+    font-size: 1.3rem;
+    background: transparent;
+    color: #A0A0A0;
+    border: 2px solid #b1b1b1;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+.searchIcon {
+    background: url('../../../public/assets_Homework_Front-End_01/search-copy@2x.png');
+    background-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.5rem;
+}
