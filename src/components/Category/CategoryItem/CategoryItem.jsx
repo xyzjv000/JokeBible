@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, { Fragment, useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { categoryAction } from '../../../store/index';
 import Button from '../../UI/Button/Button';
 import styles from './CategoryItem.module.css';
 const STYLING = [
@@ -46,10 +48,10 @@ const STYLING = [
 ];
 
 function CategoryItem() {
+  const dispatch = useDispatch();
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     const localCategories = localStorage.getItem('categories');
-    console.log(localCategories);
     if (localCategories) {
       setCategories(JSON.parse(localCategories).slice(0, 7));
     } else {
@@ -62,12 +64,17 @@ function CategoryItem() {
     }
   }, []);
 
+  const categoryClickHandler = (event) => {
+    dispatch(categoryAction.updateSelected(event.target.id));
+  };
   return (
     <Fragment>
       {categories.map((CategoryItem, index) => {
         return (
           <Button
-            onClick={() => {}}
+            id={CategoryItem}
+            key={CategoryItem}
+            onClick={categoryClickHandler}
             background={STYLING[index].backgroundColor}
             color={STYLING[index].color}
             borderColor={STYLING[index].borderColor}
@@ -77,7 +84,8 @@ function CategoryItem() {
         );
       })}
       <Button
-        onClick={() => {}}
+        id='all'
+        onClick={categoryClickHandler}
         background='#fff'
         color='#C5AF8A'
         borderColor='#C5AF8A'

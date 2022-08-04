@@ -1,0 +1,64 @@
+.card {
+    width: 100%;
+    border: 1px solid #00000020;
+    padding: 1.1rem;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.card:hover {
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 20%);
+    transition: .3s;
+}
+
+.jokeCategory {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.jokeCategory img {
+    height: 1.2rem;
+}
+
+.jokeCategory {
+    color: #303030;
+}
+
+.joke {
+    margin-top: 1rem;
+    font-size: 17px;
+    color: #303030;
+    line-height: 1.57;
+    min-height: 160px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.stats button, .stats button span {
+   display: flex;
+}
+
+.stats button {
+    gap: 10px;
+    align-items: center;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cfb995;
+    cursor: pointer;
+}
+
+.stats span img {
+    width: 25px;
+}

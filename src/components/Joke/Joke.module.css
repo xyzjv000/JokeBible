@@ -1,0 +1,77 @@
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.backBg {
+    background: url('../../../public/BACK_BG.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.backBg button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.card {
+    border: 1px solid #00000018;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 18%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    color: black;
+}
+
+.cardBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jokeTitle {
+    padding: .6rem 0;
+}
+
+.jokeTitle h2{
+    font-size: 2.5rem;
+    color: #cfb995;
+}
+
+.jokeBadge {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 15px;
+    display: inline-flex;
+    background: #5DE38B;
+    color: white;
+    align-items: center;
+    gap: 5px;
+    border-radius: 40px;
+}
+
+.jokeBadge .dot {
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 50%;
+}
+
+.rank p{
+    color: #41A4F0;
+    font-weight: 600;
+}
+
+.badge {
+    text-transform: uppercase;
+}

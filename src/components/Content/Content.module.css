@@ -10,10 +10,28 @@
     padding: 5px 20px;
     border-radius: 40px;
     border: 1px solid;
+    margin-bottom: 1rem;
 }
 
-.selectedCategory {
+.selectedCategory p{
     font-weight: 600;
     font-size: 14px;
     cursor: default;
+}
+
+.cardBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 32%));
+    justify-content: space-between;
+    gap: 2rem 1rem;
+}
+
+.moreBtn {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
 }
